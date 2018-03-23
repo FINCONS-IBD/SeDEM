@@ -15,4 +15,4 @@ The SeDEM library provides the following functionalities:
 
 >NOTE: the **SeDEM** library is represented by *rabbitmq-client-api* folder. The other folders contain the components (except for *TestRabbitMqApi*) from which the SeDEM library depends. 
 The *TestRabbitMqApi* project provide a test environment to show how to use the SeDEM library; in this project you can find also an example of configuration files. 
-For more details about the library configuration, refers to [JavaDoc](SeDEM\rabbitmq-api-client\javadoc) folder.
+For more details about the library configuration, refers to [JavaDoc](rabbitmq-api-client/javadoc) folder.

@@ -1,0 +1,5 @@
+valid_cpabe_key = att1:val1 att3:val3 att4:val4
+invalid_cpabe_key = att2:val2 att3:val3 att5:val5
+
+access policy 1: att1:val1 att2:val2 2of2 att4:val4 1of2
+access policy 2: att1:val1 att2:val2 1of2 att5:val5 2of2

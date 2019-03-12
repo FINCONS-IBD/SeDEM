@@ -47,8 +47,8 @@ Details about parameters:
 *   _client.host_ - the ip address of the RabbitMQ Server
 *   _client.vhost_ - the RabbitMQ Virtual Host name
 *   _client.destinationName_ - the exchange/queue name used by publisher/subscriber. This parameter is used when the client.exchange or client.queue isn't present
-*   _client.exchange_ - the exchange name used by publisher. If this paremeter isn't present the client use the value of destinationName
-*   _client.queue_ - the queue name used by subscriber. If this paremeter isn't present the client use the value of destinationName
+*   _client.exchange_ - the exchange name used by publisher. If this parameter isn't present the client use the value of destinationName
+*   _client.queue_ - the queue name used by subscriber. If this parameter isn't present the client use the value of destinationName
 *   _client.tls_ - flag to specify if the RabbitMQ connection must use a TLS channel
 *   _client.pattern_ - a specific string (usually the namespace path) to use as routingKey
 *   Other extra settings
@@ -61,12 +61,17 @@ In the external resource folder of the library (see the "Initial Configuration" 
 
 	# Root logger option  
 	log4j.rootLogger=INFO, stdout, file  
-# Redirect log messages to console  
+
+**Redirect log messages to console**
+
 	log4j.appender.stdout=org.apache.log4j.ConsoleAppender  
 	log4j.appender.stdout.Target=System.out  
 	log4j.appender.stdout.layout=org.apache.log4j.PatternLayout  
 	log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n  
-# Redirect log messages to a log file, support file rolling.  
+
+**Redirect log messages to a log file, support file rolling.**
+
+ 
 	log4j.appender.file=org.apache.log4j.RollingFileAppender  
 	log4j.appender.file.File=C\:\\rabbitmq_client.log  
 	#log4j.appender.file.File=/opt/logs/rabbitmq_client.log  
